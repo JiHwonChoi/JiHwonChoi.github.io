@@ -1,0 +1,66 @@
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+.wrapper-bg{
+    position:fixed;
+    bottom: -150px;
+    left: 0;
+    z-index: -1000;
+}
+.wrapper-bg img{
+    height: 100%;
+    width: 100%;
+    min-width: 950px;
+}
+
+.contentbox{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-width: 1100px;
+    
+}
+.contentbox-text{
+    width: 300px;
+    position: relative;
+    left:20px;
+}
+
+
+
+
+.footer{
+    font-family: 'Nanum Myeongjo', serif;
+    display: block;
+    background-color: rgba(221, 252, 253, 0.2);
+    
+}
+.footer-text{
+    text-align: center;
+    color: gray;
+    font-size: small;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentbox{
+        display:flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        width:100%;
+        min-width: 400px;
+        max-width: 600px;
+    }
+}

@@ -1,0 +1,49 @@
+/* 
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Zen Antique Soft', serif; 
+*/
+
+.header-container{
+    height:50px;
+}
+.header{
+    background-color: aliceblue;
+    opacity: 60%;
+    display: inline-block;
+    padding: 0 20px;
+    margin: 5px 0;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.header h3{
+    margin: 0;
+}
+.mobile-header{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightgrey;
+    }
+    .web-header{
+        display: none;
+    }
+    .mobile-header{
+        display: block;
+    }
+    
+    .header{
+        background-color:transparent;
+        display: block;
+        padding: 0 20px;
+        margin: 5px 0;
+        position: absolute;
+        top: 20px;
+        left:10px;
+    }
+}

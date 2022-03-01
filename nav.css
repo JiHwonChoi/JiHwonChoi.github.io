@@ -1,0 +1,101 @@
+
+
+
+.nav{
+    z-index: 1000;
+    background-color: white;
+    
+    width: 20%;
+    max-width: 200px;
+    min-width: 150px;
+    font-size: small;
+    height: 600px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    
+}
+.home-logo{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.home-logo img{
+    height: 150px;
+    width: 150px;
+    background-color: turquoise; 
+    /* 여기에 트랜지션 효과 작성 */
+}
+.nav-list ul{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.nav-list ul li{
+    margin-top: 20px;
+    transition: transform 2s, background-color 3s;
+}
+
+.nav-list ul li:hover{
+    transform: scale(1.1,1.1);
+    background-color: turquoise;
+}
+.nav-list ul li a{
+    display: block;
+    text-decoration: none;
+    color: darkgrey;
+    border-bottom: 2px dotted darkgrey;
+}
+.nav-list ul li a:active{
+    color: darkgrey;
+}
+.nav-list ul li a div{
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightgrey;
+    }
+
+    .nav{
+        z-index: 1000;
+        background-color: transparent;
+        
+        width: 100%;
+        min-width: 300px;
+        max-width: 600px;
+        font-size: small;
+        height: 400px;
+    
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        margin-bottom: 20px;
+    }
+
+    .nav-list ul li a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px dotted white;
+        text-align: center;
+    }
+    .nav-list ul li a:active{
+        color: black;
+    }
+    .nav-list ul li a div{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+  }

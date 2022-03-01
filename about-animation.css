@@ -1,0 +1,113 @@
+/*
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Zen Antique Soft', serif; 
+*/
+
+:root{
+    --img-size:300px;
+}
+
+.louver img{
+    scale: 0.2;
+}
+.wall img{
+    scale: 0.2;
+}
+.axono img{
+    scale: 0.1;
+}
+
+.text-wrapper{
+    width:50%;
+    height:60%;
+    max-height: 600px;
+    min-width: 400px;
+    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.text-wrapper img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.content-text{
+    width:92%;
+    min-width: 300px;
+    z-index: 205;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+    margin-top: 60px;
+}
+
+.img-wrap{
+    width:var(--img-size);
+    height:var(--img-size);
+    position: relative;
+}
+
+.anime-img{
+    position: relative;
+    top:-350px;
+    text-align: center;
+}
+
+.louver{
+    z-index: 200;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-name: louver;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes louver {
+  0%, 100% {transform: translateY(0px);}
+  50% {transform: translateY(200px);}
+
+}
+
+.wall{
+    
+    top:calc( 100px - var(--img-size));
+    z-index: 199;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: wall;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+@keyframes wall {
+  0%, 100% {transform: translateY(0px);}
+  50% {transform: translateY(120px);}
+}
+
+.axono{
+    top:calc( 200px - (2 * var(--img-size)));
+    z-index: 198;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content-text{
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.content-text p{
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+
